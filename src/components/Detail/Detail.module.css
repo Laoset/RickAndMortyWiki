@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border:6px solid #cc9e42 ;
+    border-radius: 30px;
+    background-color:#a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    width: 550px;
+}
+
+.h1prop{
+    color: #fff;
+    margin-right: 20px;
+}
+.contImg{
+}
+.imagen{
+    border: 5px solid #a8a8a8;
+    max-height: 320px;
+    width: 300px;
+    border-radius: 10px;
+}

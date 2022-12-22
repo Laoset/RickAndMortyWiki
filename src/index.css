@@ -5,9 +5,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*AGREGO LA IMAGEN DE FONDO */
+  background-image: url(./components/Fondo.jpg);
+  background-size: cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.footer{
+position: fixed;
+padding: 1rem;
+bottom: 0;
+left: 39.8%;
+}
+.text{
+  color: burlywood;
+  font-weight: bold;
 }

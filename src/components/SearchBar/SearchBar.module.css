@@ -1,0 +1,30 @@
+.input{
+    display: block;
+    width: 45%;
+    padding: 8px;
+    background: #CCC;
+    border: 3px solid #888;
+}
+.divi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4px;
+    margin-top: 5rem;
+}
+.botonsito{
+    font-family: future;
+    border: 2px solid #888;
+    padding: 10px 20px;
+    background-color: #cc9e42;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-left:5px;
+}
+.botonsito:hover{
+    background-color: grey;
+}

@@ -1,0 +1,41 @@
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contenedorMi{
+    width: 550px;
+}
+.imge{
+    height: auto;
+    width: 420px;
+}
+.h1Mi{
+
+    font-size:40px;
+    color:#F3F3EE;
+    font-weight:600;
+    font-style:italic;
+}
+.spanMi{
+    font-size:40px;
+    color:#B90000;
+    font-weight:600;
+    font-style:italic;  
+}
+.h3Mi{
+    font-size:22px;
+    color:#fff;
+    font-weight:400;
+    font-style:italic;
+}
+.li{
+    color: #B90000;
+    list-style: none;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}

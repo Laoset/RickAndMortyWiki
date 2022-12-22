@@ -1,0 +1,53 @@
+@font-face{
+    font-family: futuric;
+    src: url(/./src/fontStyle.ttf);
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 10px;
+}
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 5px 5px;
+    width: 210px;
+    height: 240px;
+    background-color: #282929;
+}
+.tarjetas:hover{
+    box-shadow:5px 5px 20px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-3%);
+}
+.imgPadre{
+    display: block;
+}
+.img{
+    width: 180px;
+}
+.h1{
+    margin:auto;
+    font-size: 1rem;
+    color: #fff;
+}
+.h1Navlink{
+    text-decoration: none;
+}
+.butonPadre{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px ;
+}
+.butonfav{
+    border-radius: 18px; 
+    background-color: #cc9e42;
+}
+.butonfav:hover{
+    background-color: #cccccc;
+    
+}
