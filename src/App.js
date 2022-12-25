@@ -13,8 +13,8 @@ function App () {
   const [characters, setCharacters] = useState ([])
   const [access, setAccess] = useState(false)
   //parte del ejercicio form para crear base de datos login
-  const username = 'kevinchelo@gmail.com'
-  const password = '123456'
+  const username = 'admin@gmail.com'
+  const password = 'admin'
 
   useEffect(() => {
     !access && navigate('/');
