@@ -51,3 +51,19 @@
     background-color: #cccccc;
     
 }
+.order{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+.orderOne{
+    padding-right: 3rem;
+}
+select{
+  font-size: 17px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: solid;
+  cursor: pointer;
+  appearance: none;
+}

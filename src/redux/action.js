@@ -1,4 +1,4 @@
-import { ADD_FAVORITES, DELETE_FAVORITES,} from "./types"
+import { ADD_FAVORITES, DELETE_FAVORITES, FILTER, ORDER} from "./types"
 
 export const addFavorites = (personaje) =>{
     return{
@@ -9,6 +9,18 @@ export const addFavorites = (personaje) =>{
 export const deleteFavorites = (id) =>{
     return{
         type: DELETE_FAVORITES, 
+        payload:id
+    }
+}
+export const filterCards = (gender) =>{
+    return{
+        type: FILTER, 
+        payload:gender
+    }
+}
+export const orderCards = (id) =>{
+    return{
+        type: ORDER, 
         payload:id
     }
 }

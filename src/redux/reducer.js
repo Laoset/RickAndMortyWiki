@@ -1,8 +1,9 @@
-import { ADD_FAVORITES,DELETE_CHARACTER } from './types'
+import { ADD_FAVORITES,DELETE_CHARACTER, FILTER, ORDER } from './types'
 
 const initialState = {
     myFavorites: [],
-    deatail: {}
+    deatail: {},
+    allCharacters: []
 }
 
 export default function rootReducer(state = initialState, {type, payload}){
@@ -10,7 +11,8 @@ export default function rootReducer(state = initialState, {type, payload}){
         case ADD_FAVORITES:
             return{
              ...state,
-             myFavorites: [...state.myFavorites, payload]
+             myFavorites: [...state.allCharacters, payload],
+             allCharacters:[...state.allCharacters, payload]
         }
         case DELETE_CHARACTER:
             const gege = state.myFavorites.filter(
@@ -18,6 +20,33 @@ export default function rootReducer(state = initialState, {type, payload}){
             return{
                 ...state,
                 myFavorites: gege
+            }
+        case FILTER:
+            console.log(payload)
+            const filtradox = state.allCharacters.filter(
+                char => char.gender === payload)
+            return{
+            ...state,
+                myFavorites: filtradox
+            }
+        case ORDER:
+            const ordenado = state.allCharacters.sort((a,b)=>{
+                //PREGUNTO si el payload es ascendente!
+                if(payload === 'Ascendente'){
+                    if(a.id < b.id) return -1
+                    if(b.id < a.id) return 1
+                    return 0;
+                }
+                //Si es descendente
+                else{
+                    if(a.id < b.id) return 1
+                    if(b.id < a.id) return -1
+                    return 0;
+                }
+            })
+            return{
+            ...state,
+                myFavorites: [...ordenado]
             }
         default:
             return {
