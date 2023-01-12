@@ -39,7 +39,7 @@ export default function Form (props){
             id='username'
             name="username" 
             type="text" 
-            placeholder="Ingresa tu usuario" 
+            placeholder="admin@gmail.com" 
             value={userData.username} 
             onChange={handleInputChange}  />
             <p className={styles.error}>{errors.username}</p>
@@ -50,7 +50,7 @@ export default function Form (props){
             name="password" 
             type="password"
             value={userData.password} 
-            placeholder="Ingresa tu contrasena" 
+            placeholder="admin" 
             onChange={handleInputChange} />
             <p className={styles.error}>{errors.password}</p>
             </div>
