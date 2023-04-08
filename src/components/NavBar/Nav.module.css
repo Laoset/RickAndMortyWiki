@@ -1,40 +1,152 @@
-@font-face{
-    font-family: future;
-    src: url(/./src/fontStyle.ttf);
+@font-face {
+  font-family: future;
+  src: url(/./src/fontStyle.ttf);
 }
-.divorin{
+@media screen and (min-width: 360px) {
+  .contenedor {
+    width: 100vw;
     display: flex;
-    height: 7rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .divorin {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
     background-color: #282929;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  .navsitos {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-}
-
-.navi{
+    text-align: center;
+    gap: 1.8rem;
+  }
+  .navi {
     font-family: future;
-    padding: 10px;
-    margin: 20px;
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
-    color: #cc9e42 ;
+    color: #cc9e42;
     border-radius: 8px;
-}
-.padreLogOut{
-    /* display: flex; */
-    margin-left: 110rem;
-    position: fixed;
-    top: 10px;
-}
-.logOut{
+  }
+  .logOut {
     font-family: future;
     border: 2px solid #888;
-    padding: 3px;
     background-color: #282929;
     color: #cc9e42;
-    font-size: 15px;
-    margin-left:5px;
+    font-size: 10px;
+  }
 }
-.logOut:hover{
-    background-color: grey;
+@media screen and (min-width: 600px) {
+  .contenedor {
+    width: 100vw;
+  }
+  .divorin {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #282929;
+    justify-content: center;
+  }
+  .navsitos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1.8rem;
+  }
+  .navi {
+    font-family: future;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc9e42;
+    border-radius: 8px;
+  }
+  .logOut {
+    font-family: future;
+    border: 2px solid #888;
+    background-color: #282929;
+    color: #cc9e42;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    width: 100vw;
+  }
+  .divorin {
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #282929;
+    justify-content: center;
+  }
+  .navsitos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1.8rem;
+  }
+  .navi {
+    font-family: future;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc9e42;
+    border-radius: 8px;
+  }
+  .logOut {
+    font-family: future;
+    border: 2px solid #888;
+    background-color: #282929;
+    color: #cc9e42;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .contenedor {
+    width: 100vw;
+  }
+  .divorin {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #282929;
+    justify-content: center;
+  }
+  .navsitos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1.8rem;
+  }
+  .navi {
+    font-family: future;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc9e42;
+    border-radius: 8px;
+    margin-left: 5rem;
+  }
+  .logOut {
+    font-family: future;
+    border: 2px solid #888;
+    background-color: #282929;
+    color: #cc9e42;
+    font-size: 1rem;
+    margin-left: 5rem;
+  }
+}
+.logOut:hover {
+  background-color: grey;
 }

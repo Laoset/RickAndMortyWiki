@@ -1,30 +1,112 @@
-.input{
-    display: block;
-    width: 45%;
-    padding: 8px;
-    background: #CCC;
-    border: 3px solid #888;
-}
-.divi{
+@media screen and (min-width: 360px) {
+  .divi {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 4px;
-    margin-top: 5rem;
-}
-.botonsito{
+    width: 100%;
+  }
+  .input {
+    display: block;
+    width: 45%;
+    padding: 5px;
+    background: #ccc;
+    border: 3px solid #888;
+  }
+  .botonsito {
     font-family: future;
     border: 2px solid #888;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: #cc9e42;
     color: #fff;
-    letter-spacing: 1px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 8px;
-    margin-left:5px;
+    margin-left: 5px;
+  }
 }
-.botonsito:hover{
-    background-color: grey;
+@media screen and (min-width: 660px) {
+  .divi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .input {
+    display: block;
+    width: 40%;
+    padding: 5px;
+    background: #ccc;
+    border: 3px solid #888;
+  }
+  .botonsito {
+    font-family: future;
+    border: 2px solid #888;
+    padding: 10px 10px;
+    background-color: #cc9e42;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .divi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .input {
+    display: block;
+    width: 30%;
+    padding: 5px;
+    background: #ccc;
+    border: 3px solid #888;
+  }
+  .botonsito {
+    font-family: future;
+    border: 2px solid #888;
+    padding: 10px 10px;
+    background-color: #cc9e42;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-left: 5px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .divi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .input {
+    display: block;
+    width: 20%;
+    padding: 9px;
+    background: #ccc;
+    border: 3px solid #888;
+  }
+  .botonsito {
+    font-family: future;
+    border: 2px solid #888;
+    padding: 15px 20px;
+    background-color: #cc9e42;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-left: 5px;
+  }
+}
+
+.botonsito:hover {
+  background-color: grey;
 }
