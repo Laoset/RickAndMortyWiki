@@ -17,14 +17,19 @@ function App() {
   const password = "admin";
 
   useEffect(() => {
+    let id = localStorage.getItem("id");
+    if (id === "rick") {
+      setAccess(true);
+      navigate("/home");
+    }
     !access && navigate("/");
   }, [access]);
-
   //mi funcion para login
   function login(userData) {
     if (userData.username === username && userData.password === password) {
       setAccess(true);
       navigate("/home");
+      localStorage.setItem("id", "rick");
     } else {
       alert("Datos incorrectos");
     }
@@ -46,6 +51,7 @@ function App() {
       oldCharacters.filter((char) => id !== char.id)
     );
   };
+
   return (
     <div>
       <div>
